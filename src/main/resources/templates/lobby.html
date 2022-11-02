@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../css/lobby.css">
+<link rel="stylesheet" href="../css/content.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:replace="fragments/navbar :: navbar"></div>
+<div class="content">
+    <table id="lobby">
+        <thead>
+        <tr>
+            <th scope="col">player</th>
+            <th scope="col">status</th>
+            <th scope="col">ping</th>
+            <th scope="col">wins</th>
+            <th scope="col">loses</th>
+            <th scope="col">total</th>
+            <th scope="col">w/l</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-label="player">Albert</td>
+            <td data-label="status">offline</td>
+            <td data-label="ping">76 ms</td>
+            <td data-label="wins">8</td>
+            <td data-label="loses">4</td>
+            <td data-label="total">12</td>
+            <td data-label="w/l">2.0</td>
+        </tr>
+        <tr>
+            <td data-label="player">Arek</td>
+            <td data-label="status">offline</td>
+            <td data-label="ping">56 ms</td>
+            <td data-label="wins">6</td>
+            <td data-label="loses">2</td>
+            <td data-label="total">8</td>
+            <td data-label="w/l">3.0</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
