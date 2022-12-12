@@ -9,7 +9,7 @@ plugins {
 group = 'ggxxreload'
 version = '1.0'
 description = 'ggnlobby-java'
-sourceCompatibility = '11'
+sourceCompatibility = '17'
 
 repositories {
     mavenCentral()
